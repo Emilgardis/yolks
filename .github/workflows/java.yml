@@ -8,6 +8,7 @@ on:
       - dev
     paths:
       - java/**
+      - .github/workflows/java.yml
 jobs:
   push:
     name: "yolks:java_${{ matrix.tag }}"
@@ -42,4 +43,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/parkervcp/yolks:java_${{ matrix.tag }}
+            ghcr.io/emilgardis/yolks:java_${{ matrix.tag }}
